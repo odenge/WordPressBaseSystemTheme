@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+/*************************************/
+/********** 固定ページ編集 **********/
+/*************************************/
+
+.entry-content {
+}
+
+.entry-content h1 {
+	clear: both;
+	font-weight: bold;
+	color: #333;
+	background-color: #B3E5FC;
+	font-size: 1.4em;
+	line-height: 1.3em;
+	padding: 16px 30px;
+	border: 1px solid #d6d6d6;
+	margin-bottom: 15px;
+}
+
+.entry-content h2 {
+	clear: both;
+	font-weight: bold;
+	color: #333;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	padding: 0 0 6px 0;
+	border-bottom: 1px dashed #CCC;
+	margin-bottom: 12px;
+}
+
+.entry-content h3 {
+	clear: both;
+	font-weight: bold;
+	color: #333;
+	font-size: 1.2em;
+	line-height: 1.3em;
+	padding-left: 10px;
+	border-left: 4px solid #0288D1;
+	margin-bottom: 8px;
+}
+
+.entry-content h4 {
+	clear: both;
+	font-weight: bold;
+	color: #333;
+	font-size: 1.1em;
+	line-height: 1.2em;
+	margin-bottom: 5px;
+}
+
+.entry-content h5 {
+	clear: both;
+	font-weight: normal;
+	color: #333;
+	font-size: 1.1em;
+	line-height: 1.2em;
+	margin-bottom: 5px;
+}
+
+.entry-content h6 {
+	clear: both;
+	font-weight: normal;
+	line-height: 1.2em;
+	color: #333;
+	margin-bottom: 5px;
+}
+
+.entry-content p {
+	margin-bottom: 30px;
+}
+
+.entry-content ul {
+	list-style: disc;
+	margin: 0 0 30px 25px;
+}
+.entry-content ul li {
+	padding-bottom: 5px;
+}
+
+.entry-content ol {
+	list-style: decimal;
+	margin: 0 0 30px 25px;
+}
+.entry-content ol li {
+	padding-bottom: 5px;
+}
+
+.entry-content table.base {
+	margin-bottom: 30px;
+}
+.entry-content table.base th {
+	white-space: nowrap;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	padding: 7px 15px;
+	border: 1px solid #d6d6d6;
+	background-color: #e2f6ff;
+}
+.entry-content table.base td {
+	text-align: left;
+	vertical-align: top;
+	padding: 7px 8px;
+	border: 1px solid #d6d6d6;
+	background-color: #FFF;
+}
+.entry-content table.base p,
+.entry-content table.base ul,
+.entry-content table.base ol {
+	margin-bottom: 0;
+}
+
+
+/*********************************/
+/***** 挿入画像 *****/
+/*********************************/
+
+.alignleft {
+	display: block;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+
+.alignright {
+	display: block;
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 30px;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0px auto 30px;
+}
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font-size: .8em;
+}
+.wp-caption .wp-caption-text {
+	margin: 0px;
+	padding: 8px 0px 0px 0px;
+	text-align: center;
+}

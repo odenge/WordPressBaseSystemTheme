@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/*********************************/
+/***** 【ページ共通スタイル】 *****/
+/*********************************/
+
+/* no-link */
+.no-link a {
+	cursor: text;
+	pointer-events: none;
+}
+.no-link a:link,
+.no-link a:visited {
+	color: #333;
+	text-decoration: none;
+}
+.no-link a:hover,
+.no-link a:active {
+	color: #333;
+	text-decoration: none;
+}
+
+
+/* ul.kome */
+.entry-content ul.kome {
+	list-style: none;
+	margin: 0 0 30px 0;
+}
+.entry-content ul.kome li {
+	text-indent: -1.5em;
+	padding-left: 1.5em;
+	padding-bottom: 5px;
+}
+
+
+/* page-entry-content */
+.page-entry-content {
+	padding: 20px 20px 5px;
+	border: 1px solid #d6d6d6;
+	margin-bottom: 40px;
+}
+
+
+/* back-btn */
+.back-btn {
+	display: block;
+	width: 115px;
+	margin: 40px auto 0;
+	border: 1px solid #d6d6d6;
+}
+.back-btn a {
+	display: block;
+	padding: 6px 12px;
+	text-align: right;
+	background: url(../images/common/icon_navi01.png) no-repeat 10px 12px;
+}
+.back-btn a:link,
+.back-btn a:visited {
+	color: #FFF;
+	background-color: #0288D1;
+	text-decoration: none;
+}
+.back-btn a:hover,
+.back-btn a:active {
+	color: #FFF;
+	background-color: #03A9F4;
+	text-decoration: none;
+}
+
+
+/*********************************/
+/* ページＡ */
+/*********************************/
+
+
+
+
+/*********************************/
+/* ページＢ */
+/*********************************/
