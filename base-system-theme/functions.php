@@ -61,42 +61,6 @@ add_filter( 'login_errors', create_function('$a', "return '<strong>エラー:</s
 add_theme_support('menus');
 
 
-/* お客様の管理画面不必要項目を非表示 */
-function remove_menus () {
-  global $menu;
-  global $current_user;
-  get_currentuserinfo();
-
-  $user_login_name = $current_user->user_login;
-  $editor_users = array('staff', 'staff2'); /* お客様のアカウント名を指定 */
-
-  if( array_search($user_login_name, $editor_users) !== FALSE ) {
-    $restricted = array( __('投稿'), __('コメント'), __('プロフィール'), __('ツール') );
-    end ($menu);
-    while (prev($menu)){
-      $value = explode(' ',$menu[key($menu)][0]);
-      if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){
-        unset($menu[key($menu)]);
-      }
-    }
-  }
-}
-add_action('admin_menu', 'remove_menus');
-
-
-/* 表示確認アカウントの場合、管理画面からメニュー等を削除 */
-function disable_test_users_menu() {
-	echo '<style type="text/css">#wpbody-content .wrap, #screen-meta-links, #wp-admin-bar-edit-profile, #adminmenu {display: none !important;}</style>';
-}
-global $current_user;
-get_currentuserinfo();
-$user_login_name = $current_user->user_login;
-$test_users = array('test');
-if( array_search($user_login_name, $test_users) !== FALSE ){
-	add_action('admin_head', 'disable_test_users_menu');
-}
-
-
 /* 概要（抜粋）の文字数調整 */
 function my_excerpt_length($length) {
 	return 80;
@@ -133,6 +97,52 @@ function my_archives_link( $link_html ) {
 
   return $link_html;
 }
+
+
+
+
+/* 特定アカウントで管理画面の不必要メニュー等を非表示 */
+
+/*
+function remove_menus () {
+  global $menu;
+  global $current_user;
+  get_currentuserinfo();
+
+  $user_login_name = $current_user->user_login;
+  $editor_users = array('staff1', 'staff2');
+
+  if( array_search($user_login_name, $editor_users) !== FALSE ) {
+    $restricted = array( __('投稿'), __('コメント'), __('プロフィール'), __('ツール') );
+    end ($menu);
+    while (prev($menu)){
+      $value = explode(' ',$menu[key($menu)][0]);
+      if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){
+        unset($menu[key($menu)]);
+      }
+    }
+  }
+}
+add_action('admin_menu', 'remove_menus');
+*/
+
+
+
+
+/* 表示確認アカウントで管理画面の不必要メニュー等を非表示 */
+
+/*
+function disable_test_users_menu() {
+	echo '<style type="text/css">#wpbody-content .wrap, #screen-meta-links, #wp-admin-bar-edit-profile, #adminmenu {display: none !important;}</style>';
+}
+global $current_user;
+get_currentuserinfo();
+$user_login_name = $current_user->user_login;
+$test_users = array('test');
+if( array_search($user_login_name, $test_users) !== FALSE ){
+	add_action('admin_head', 'disable_test_users_menu');
+}
+*/
 
 
 ?>
