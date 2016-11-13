@@ -1,0 +1,2 @@
+# WordPressBaseSystemTheme
+WordPressの基本テーマ
