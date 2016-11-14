@@ -8,15 +8,10 @@
 <a href="<?php echo esc_url( home_url( '/' ) ); ?>news/">新着情報</a> &gt; <?php the_time('Y/m/d'); ?>
 
 
-
-
-
-
-
-
-
-
-
+<?php elseif( is_page_template('work.php') ) : /* 制作実績　一覧ページ */ ?>
+制作実績
+<?php elseif( is_singular('work') ) : /* 制作実績　詳細ページ */ ?>
+<a href="<?php echo esc_url( home_url( '/' ) ); ?>work/">制作実績</a> &gt; <?php the_title(); ?>
 
 
 <?php elseif( is_page_template('faq.php') ) : /* よくあるご質問　一覧ページ */ ?>
