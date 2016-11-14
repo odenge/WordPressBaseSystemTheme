@@ -270,10 +270,14 @@
 #work-content #work-result-content .article .article-info .article-image .article-photo {
 	display: table-cell;
 	width: 320px;
+	text-align: left;
+	vertical-align: top;
 }
 #work-content #work-result-content .article .article-info .article-image .article-photo-content {
 	display: table-cell;
-}
+	text-align: left;
+	vertical-align: top;
+}}
 
 
 /* article-sub-info */

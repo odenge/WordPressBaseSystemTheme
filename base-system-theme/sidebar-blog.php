@@ -14,7 +14,7 @@
         <?php if ( $loop_blog_side->have_posts() ) : ?>
             <?php /* ■【Start the Loop】■ */ ?>
             <?php while ( $loop_blog_side->have_posts() ) : $loop_blog_side->the_post();?>
-                <li<?php if ( $post_id == get_the_ID() ) : ?> class="current"<?php endif; ?>><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                <li<?php if ( is_single() && $post_id == get_the_ID() ) : ?> class="current"<?php endif; ?>><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
             <?php endwhile; ?>
             <?php /* ■【End the Loop】■ */ ?>
         <?php else : ?>
