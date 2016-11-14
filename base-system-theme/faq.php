@@ -36,7 +36,7 @@ Template Name: よくあるご質問
 		                <?php if ( count( $terms ) != 0 ) : ?>
 		                <ul>
 		                    <?php foreach ( $terms as $term ) : ?>
-		                    <li><a href="#faq-<?php echo esc_attr($term->slug); ?>"><?php echo esc_html($term->name); ?></a></li>
+		                    <li><a href="#faq-<?php echo esc_attr($term->slug); ?>"><span><?php echo esc_html($term->name); ?></span></a></li>
 		                    <?php endforeach; ?>
 		                </ul>
 		                <?php endif; ?>
