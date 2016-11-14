@@ -29,7 +29,7 @@ Template Name: 制作実績
 						<form role="search" method="get" id="work-form" action="<?php echo esc_url( home_url('/') ); ?>work/">
 
 							<div class="type">
-								<div class="title">CMSタイプ</div>
+								<div class="title">タイプ</div>
 								<select name="type">
 								<option value="">すべて</option>
 								<?php
@@ -102,7 +102,7 @@ Template Name: 制作実績
 							<div class="search-btn">
 								<input class="btn" type="submit" name="searchsubmit" value="検索" />
 							</div>
-							
+
 						</form>
 					</div><!-- end : #work-form-content -->
 
