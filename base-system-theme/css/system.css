@@ -163,35 +163,6 @@
 
 
 /*********************************/
-/***** 新着情報　詳細ページ *****/
-/*********************************/
-
-body.single-topics #main-content .back-btn {
-	display: block;
-	width: 115px;
-	margin: 40px auto 0;
-	border: 1px solid #d6d6d6;
-}
-body.single-topics #main-content .back-btn a {
-	display: block;
-	padding: 6px 12px;
-	text-align: right;
-	background: url(../images/common/icon_navi02.png) no-repeat 10px 12px;
-}
-body.single-topics #main-content .back-btn a:link,
-body.single-topics #main-content .back-btn a:visited {
-	color: #292929;
-	text-decoration: none;
-}
-body.single-topics #main-content .back-btn a:hover,
-body.single-topics #main-content .back-btn a:active {
-	color: #292929;
-	background-color: #fbf1d1;
-	text-decoration: none;
-}
-
-
-/*********************************/
 /***** よくあるご質問 *****/
 /*********************************/
 
@@ -325,5 +296,121 @@ body.single-topics #main-content .back-btn a:active {
 }
 #faq-content #faq-list ul li .info a:hover,
 #faq-content #faq-list ul li .info a:active {
+	text-decoration: none;
+}
+
+
+/*********************************/
+/***** ブログ *****/
+/*********************************/
+
+#blog-content #blog-title {
+	clear: both;
+	font-weight: bold;
+	color: #333;
+	background-color: #B3E5FC;
+	font-size: 1.4em;
+	line-height: 1.3em;
+	padding: 16px 30px;
+	border: 1px solid #d6d6d6;
+	margin-bottom: 15px;
+}
+
+#blog-content .content .article {
+	margin-bottom: 60px;
+}
+
+#blog-content .content .article .article-title {
+	clear: both;
+	font-weight: bold;
+	color: #333;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	padding: 0 0 6px 0;
+	border-bottom: 1px dashed #CCC;
+	margin-bottom: 12px;
+}
+
+#blog-content .content .article .article-info {
+	padding: 0 12px;
+}
+#blog-content .content .article .article-info .article-content {
+	padding-bottom: 10px;
+}
+
+
+/* article-sub-info */
+#blog-content .content .article .article-info .article-sub-info {
+	border-bottom: 1px solid #d6d6d6;
+}
+#blog-content .content .article .article-info .article-sub-info .article-date,
+#blog-content .content .article .article-info .article-sub-info .article-category {
+	font-size: .85em;
+	line-height: 1.4em;
+	border-top: 1px solid #d6d6d6;
+	padding: 10px 15px;
+}
+#blog-content .content .article .article-info .article-sub-info .article-date dl,
+#blog-content .content .article .article-info .article-sub-info .article-category dl {
+	display: table;
+	border-collapse: collapse;
+}
+#blog-content .content .article .article-info .article-sub-info .article-date dl dt,
+#blog-content .content .article .article-info .article-sub-info .article-category dl dt {
+	display: table-cell;
+	width: 120px;
+	text-align: left;
+	vertical-align: top;
+	border-right: 1px solid #d6d6d6;
+}
+#blog-content .content .article .article-info .article-sub-info .article-date dl dd,
+#blog-content .content .article .article-info .article-sub-info .article-category dl dd {
+	display: table-cell;
+	text-align: left;
+	vertical-align: top;
+	padding-left: 12px;
+}
+
+
+/* pagenavi */
+#blog-content .content .pagenavi-top {
+	padding-bottom: 40px;
+}
+#blog-content .content .pagenavi-bottom {
+}
+
+
+/* prev-next-content */
+#blog-content .content .prev-next-content {
+	padding: 0 12px;
+	margin-top: 20px;
+}
+#blog-content .content .prev-next-content .prev {
+	float: left;
+}
+#blog-content .content .prev-next-content .next {
+	float: right;
+}
+#blog-content .content .prev-next-content .btn {
+	display: block;
+	width: 145px;
+	border: 1px solid #d6d6d6;
+}
+#blog-content .content .prev-next-content .btn a {
+	display: block;
+	padding: 6px 12px;
+	text-align: right;
+	background: url(../images/common/icon_navi01.png) no-repeat 10px 12px;
+}
+#blog-content .content .prev-next-content .btn a:link,
+#blog-content .content .prev-next-content .btn a:visited {
+	color: #FFF;
+	background-color: #757575;
+	text-decoration: none;
+}
+#blog-content .content .prev-next-content .btn a:hover,
+#blog-content .content .prev-next-content .btn a:active {
+	color: #FFF;
+	background-color: #03A9F4;
 	text-decoration: none;
 }
