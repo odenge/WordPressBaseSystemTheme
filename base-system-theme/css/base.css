@@ -125,7 +125,8 @@ header nav > div > ul > li.current-menu-ancestor > a,
 body.single-news header nav > div > ul > li.news > a,
 body.single-work header nav > div > ul > li.work > a,
 body.single-faq header nav > div > ul > li.faq > a,
-body.single-blog header nav > div > ul > li.blog > a {
+body.archive header nav > div > ul > li.blog > a,
+body.single-post header nav > div > ul > li.blog > a {
 	color: #FFF;
 	background-color: #03A9F4;
 	text-decoration: none;
@@ -295,37 +296,52 @@ header nav > div > ul li li:hover ul li:first-child a:active {
 
 
 /* side-menu */
-#side-menu .menu-content ul {
+#side-content .side-menu {
+	margin-bottom: 60px;
+}
+#side-content .side-menu h1 {
+	font-weight: bold;
+	color: #FFF;
+	background-color: #03A9F4;
+	padding: 15px 10px 15px 20px;
+	border-top: 1px solid #d6d6d6;
+	border-left: 1px solid #d6d6d6;
+	border-right: 1px solid #d6d6d6;
+}
+
+
+#side-content .side-menu .menu-content ul {
 	border: 1px solid #d6d6d6;
 }
-#side-menu .menu-content ul li {
+#side-content .side-menu .menu-content ul li {
 	border-bottom: 1px solid #d6d6d6;
 }
-#side-menu .menu-content ul li:last-of-type {
+#side-content .side-menu .menu-content ul li:last-of-type {
 	border-bottom: none;
 }
-#side-menu .menu-content ul li a {
+#side-content .side-menu .menu-content ul li a {
 	display: block;
 	padding: 15px 10px 15px 20px;
 }
-#side-menu .menu-content ul li a:link,
-#side-menu .menu-content ul li a:visited {
+#side-content .side-menu .menu-content ul li a:link,
+#side-content .side-menu .menu-content ul li a:visited {
 	color: #333;
 	background: url(../images/common/icon_navi01.png) no-repeat 10px 23px #FFF;
 	text-decoration: none;
 }
-#side-menu .menu-content ul li a:hover,
-#side-menu .menu-content ul li a:active,
-#side-menu .menu-content ul li.current a,
-#side-menu .menu-content ul li.current-cat a,
-#side-menu .menu-content ul li.current_page_item a,
-#side-menu .menu-content ul li.current-page-ancestor a,
-#side-menu .menu-content ul li.current-menu-item a,
-#side-menu .menu-content ul li.current-menu-ancestor a,
-body.single-news #side-menu .menu-content ul li.news a,
-body.single-work #side-menu .menu-content ul li.work a,
-body.single-faq #side-menu .menu-content ul li.faq a,
-body.single-blog #side-menu .menu-content ul li.blog a {
+#side-content .side-menu .menu-content ul li a:hover,
+#side-content .side-menu .menu-content ul li a:active,
+#side-content .side-menu .menu-content ul li.current a,
+#side-content .side-menu .menu-content ul li.current-cat a,
+#side-content .side-menu .menu-content ul li.current_page_item a,
+#side-content .side-menu .menu-content ul li.current-page-ancestor a,
+#side-content .side-menu .menu-content ul li.current-menu-item a,
+#side-content .side-menu .menu-content ul li.current-menu-ancestor a,
+body.single-news #side-content .side-menu .menu-content ul li.news a,
+body.single-work #side-content .side-menu .menu-content ul li.work a,
+body.single-faq #side-content .side-menu .menu-content ul li.faq a,
+body.archive #side-content .side-menu .menu-content ul li.blog a,
+body.single-post #side-content .side-menu .menu-content ul li.blog a {
 	color: #333;
 	background: url(../images/common/icon_navi01.png) no-repeat 10px 23px #B3E5FC;
 	text-decoration: none;

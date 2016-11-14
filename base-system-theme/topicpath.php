@@ -8,10 +8,31 @@
 <a href="<?php echo esc_url( home_url( '/' ) ); ?>news/">新着情報</a> &gt; <?php the_time('Y/m/d'); ?>
 
 
+
+
+
+
+
+
+
+
+
+
+
 <?php elseif( is_page_template('faq.php') ) : /* よくあるご質問　一覧ページ */ ?>
 よくあるご質問
 <?php elseif( is_singular('faq') ) : /* よくあるご質問　詳細ページ */ ?>
 <a href="<?php echo esc_url( home_url( '/' ) ); ?>faq/">よくあるご質問</a> &gt; <?php the_title(); ?>
+
+
+<?php elseif( is_page_template('blog.php') ) : /* ブログ　一覧ページ */ ?>
+ブログ
+<?php elseif( is_single() ) : /* ブログ　詳細ページ */ ?>
+<a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/">ブログ</a> &gt; <?php the_time('Y/m/d'); ?>
+<?php elseif( is_category() ) : /* ブログ　カテゴリー一覧ページ */ ?>
+<a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/">ブログ</a> &gt; <?php print( single_cat_title( '', false ) ); ?>
+<?php elseif( is_archive() ) : /* ブログ　月別アーカイブ一覧ページ */ ?>
+<a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/">ブログ</a> &gt; <?php print( get_the_date( 'Y年n月' ) ); ?>
 
 
 <?php elseif( is_page() ): /* 固定ページ */ ?>
