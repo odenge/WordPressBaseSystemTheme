@@ -163,6 +163,165 @@
 
 
 /*********************************/
+/***** 制作実績 *****/
+/*********************************/
+
+#work-content #work-title {
+	clear: both;
+	font-weight: bold;
+	color: #333;
+	background-color: #B3E5FC;
+	font-size: 1.4em;
+	line-height: 1.3em;
+	padding: 16px 30px;
+	border: 1px solid #d6d6d6;
+	margin-bottom: 15px;
+}
+
+
+/* work-form-content */
+#work-content #work-form-content {
+	border: 4px solid #d6d6d6;
+	padding: 30px;
+	margin-bottom: 60px;
+}
+#work-content #work-form-content #work-form {
+}
+
+#work-content #work-form-content #work-form .type {
+	float: left;
+	width: 240px;
+}
+
+#work-content #work-form-content #work-form .category {
+	float: right;
+	width: 440px;
+}
+#work-content #work-form-content #work-form .category ul li {
+	float: left;
+	margin: 0 20px 15px 0;
+}
+#work-content #work-form-content #work-form .category ul li input {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+/* search-btn */
+#work-content #work-form-content #work-form .search-btn {
+	clear: both;
+	padding-top: 10px;
+}
+#work-content #work-form-content #work-form .search-btn input.btn {
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif,'ＭＳ Ｐゴシック';
+	font-size:  20px;
+	line-height: 24px;
+	display: block;
+	width: 100px;
+	padding: 6px 12px;
+	margin:  0 auto;
+	border: 1px solid #d6d6d6;
+	color: #FFF;
+	text-align: center;
+	background: url(../images/common/icon_navi01.png) no-repeat 10px 12px #0288D1;
+	border: none;
+}
+#work-content #work-form-content #work-form .search-btn input.btn:hover,
+#work-content #work-form-content #work-form .search-btn input.btn:active {
+	color: #FFF;
+	background: url(../images/common/icon_navi01.png) no-repeat 10px 12px #03A9F4;
+}
+
+
+
+
+/* article */
+#work-content #work-result-content .article {
+	border: 1px solid #d6d6d6;
+	padding: 15px;
+	margin-bottom: 60px;
+}
+
+#work-content #work-result-content .article .article-title {
+	clear: both;
+	font-weight: bold;
+	color: #333;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	padding: 0 0 6px 0;
+	border-bottom: 1px dashed #CCC;
+	margin-bottom: 12px;
+}
+
+#work-content #work-result-content .article .article-info {
+}
+#work-content #work-result-content .article .article-info .article-content {
+	padding: 0 12px;
+	margin-bottom: 10px;
+}
+
+
+/* article-image */
+#work-content #work-result-content .article .article-info .article-image {
+	width: 100%;
+	display: table;
+	border-collapse: collapse;
+	margin-bottom: 12px;
+}
+#work-content #work-result-content .article .article-info .article-image .article-photo {
+	display: table-cell;
+	width: 320px;
+}
+#work-content #work-result-content .article .article-info .article-image .article-photo-content {
+	display: table-cell;
+}
+
+
+/* article-sub-info */
+#work-content #work-result-content .article .article-info .article-sub-info {
+	border-bottom: 1px solid #d6d6d6;
+}
+#work-content #work-result-content .article .article-info .article-sub-info .article-date,
+#work-content #work-result-content .article .article-info .article-sub-info .article-type,
+#work-content #work-result-content .article .article-info .article-sub-info .article-category {
+	font-size: .85em;
+	line-height: 1.4em;
+	border-top: 1px solid #d6d6d6;
+	padding: 10px 15px;
+}
+#work-content #work-result-content .article .article-info .article-sub-info .article-date dl,
+#work-content #work-result-content .article .article-info .article-sub-info .article-type dl,
+#work-content #work-result-content .article .article-info .article-sub-info .article-category dl {
+	display: table;
+	border-collapse: collapse;
+}
+#work-content #work-result-content .article .article-info .article-sub-info .article-date dl dt,
+#work-content #work-result-content .article .article-info .article-sub-info .article-type dl dt,
+#work-content #work-result-content .article .article-info .article-sub-info .article-category dl dt {
+	display: table-cell;
+	width: 120px;
+	text-align: left;
+	vertical-align: top;
+	border-right: 1px solid #d6d6d6;
+}
+#work-content #work-result-content .article .article-info .article-sub-info .article-date dl dd,
+#work-content #work-result-content .article .article-info .article-sub-info .article-type dl dd,
+#work-content #work-result-content .article .article-info .article-sub-info .article-category dl dd {
+	display: table-cell;
+	text-align: left;
+	vertical-align: top;
+	padding-left: 12px;
+}
+
+
+/* pagenavi */
+#work-content #work-result-content .pagenavi-top {
+	padding-bottom: 40px;
+}
+#work-content #work-result-content .pagenavi-bottom {
+}
+
+
+/*********************************/
 /***** よくあるご質問 *****/
 /*********************************/
 
