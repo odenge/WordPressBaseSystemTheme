@@ -8,6 +8,12 @@
 <a href="<?php echo esc_url( home_url( '/' ) ); ?>news/">新着情報</a> &gt; <?php the_time('Y/m/d'); ?>
 
 
+<?php elseif( is_page_template('faq.php') ) : /* よくあるご質問　一覧ページ */ ?>
+よくあるご質問
+<?php elseif( is_singular('faq') ) : /* よくあるご質問　詳細ページ */ ?>
+<a href="<?php echo esc_url( home_url( '/' ) ); ?>faq/">よくあるご質問</a> &gt; <?php the_title(); ?>
+
+
 <?php elseif( is_page() ): /* 固定ページ */ ?>
 	<?php if( $post->post_parent != 0 ) : /* 親ページの有無判別 */ ?>
     	<?php $ancestors = array_reverse( $post->ancestors ); /* 祖先ページのIDを格納した配列（格納順は逆に変更） */ ?>
