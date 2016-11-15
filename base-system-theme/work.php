@@ -61,7 +61,7 @@ Template Name: 制作実績
 
 
 							<div class="category">
-								<div class="text">カテゴリーを選択してください。</div>
+								<div class="text">カテゴリー選択（1つでも該当すれば表示）</div>
 								<ul class="clearfix">
 								<?php
 								// カスタム分類名
