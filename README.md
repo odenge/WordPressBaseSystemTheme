@@ -9,12 +9,12 @@ http://orange-juice.sakura.ne.jp/work/
 　●【よくあるご質問】
 
 
-■■1.【プラグインインストール・設定】■■
+## ■■1.【プラグインインストール・設定】■■  
 WordPress管理画面　左メニュー「プラグイン」
 「新規追加」から下記のプラグインをインストールし有効化
 それぞれの設定を行う
 
-□1-1.「Custom Post Type UI」
+## □1-1.「Custom Post Type UI」
 
 WordPress管理画面　左メニュー「設定」 「CPT UI」
 下記のカスタム投稿とタクソノミーを作成する
