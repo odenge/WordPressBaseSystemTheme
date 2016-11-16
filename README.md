@@ -1,9 +1,9 @@
-# WordPressBaseSystemTheme
 よく使われる機能を組み込んだ、Webサイトのベースに使えるWordPressテーマ！
+==
 
 【表示確認サイト】
 http://orange-juice.sakura.ne.jp/work/
-
+-
 　●【新着情報】
 　●【制作実績】※文言を「商品」等に変更すれば店舗サイトも対応可能
 　●【よくあるご質問】
