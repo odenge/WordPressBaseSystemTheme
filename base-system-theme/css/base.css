@@ -8,7 +8,12 @@ body {
 	text-align: center;
 	font-size: 1em;
 	line-height: 1.6em;
-	min-width: 1080px;
+}
+/* PCサイト */
+@media (min-width: 768px) {
+	body {
+		min-width: 1080px;
+	}
 }
 
 body img {
@@ -237,6 +242,15 @@ header nav > div > ul li li:hover ul li:first-child a:active {
 	text-align: left;
 	vertical-align: top;
 }
+/* スマホサイト */
+@media (max-width: 767px) {
+	#contents {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0 10px;
+	}
+}
+
 
 /* top-main-image */
 #top-main-image {
@@ -244,9 +258,12 @@ header nav > div > ul li li:hover ul li:first-child a:active {
 }
 
 /* main-content */
-#main-content {
-	float: right;
-	width: 790px;
+/* PCサイト */
+@media (min-width: 768px) {
+	#main-content {
+		float: right;
+		width: 790px;
+	}
 }
 
 
@@ -294,9 +311,12 @@ header nav > div > ul li li:hover ul li:first-child a:active {
 /*************************************/
 
 /* side-content */
-#side-content {
-	float: left;
-	width: 260px;
+/* PCサイト */
+@media (min-width: 768px) {
+	#side-content {
+		float: left;
+		width: 260px;
+	}
 }
 
 
