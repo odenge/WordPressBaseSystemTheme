@@ -31,6 +31,8 @@ bloginfo('name');
         <div id="head">
             <div class="content clearfix">
                 <div class="logo img-rollover"><a href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/common/logo.png" alt="<?php bloginfo('name'); ?>" /></a></div>
+
+				<div class="search"><?php get_search_form(); ?></div>
             </div><!-- end : .content -->
         </div><!-- end : #head -->
 
