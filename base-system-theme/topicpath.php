@@ -46,6 +46,10 @@
 ページエラー
 
 
+<?php elseif( is_search() ) : /* 検索ページ */ ?>
+検索
+
+
 <?php else : /* 上記以外のページ */ ?>
 <?php the_title(); ?>
 <?php endif; ?>
