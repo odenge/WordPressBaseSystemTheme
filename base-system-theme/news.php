@@ -52,7 +52,7 @@ Template Name: 新着情報
                             <dt><?php echo date('Y/m/d'); ?></dt>
                             <dd>新着情報はまだありません。</dd>
                         <?php endif; ?>
-                        <?php wp_reset_query(); /* クエリをリセット */ ?>
+                        <?php wp_reset_postdata(); /* クエリをリセット */ ?>
                         </dl>
 
                         <?php if ( $news_count > $news_per_page_number ) : ?>

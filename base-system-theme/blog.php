@@ -50,7 +50,7 @@ Template Name: ブログ
 					    <?php else : ?>
 					        <p>記事はまだありません。</p>
 					    <?php endif; ?>
-					    <?php wp_reset_query(); /* クエリをリセット */ ?>
+					    <?php wp_reset_postdata(); /* クエリをリセット */ ?>
 
 					    <?php if ( $blog_count > $blog_per_page_number ) : ?>
 					        <div class="pagenavi pagenavi-bottom clearfix"><span class="count">全<?php echo $blog_count; ?>件</span ><?php if(function_exists('wp_pagenavi')) { wp_pagenavi( array( 'query' => $loop_blog) ); } ?></div>

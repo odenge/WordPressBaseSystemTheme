@@ -189,7 +189,7 @@ Template Name: 制作実績
 				        <?php else : ?>
 				            <p>制作実績はまだありません。</p>
 				        <?php endif; ?>
-				        <?php wp_reset_query(); /* クエリをリセット */ ?>
+				        <?php wp_reset_postdata(); /* クエリをリセット */ ?>
 
 				        <?php if ( $loop_count > $wp_query_posts_per_page ) : /* ページ送り　下部 */ ?>
 				            <div class="pagenavi pagenavi-bottom clearfix"><span class="count">全<?php echo $loop_count; ?>件</span ><?php if(function_exists('wp_pagenavi')) { wp_pagenavi( array( 'query' => $loop) ); } ?></div>

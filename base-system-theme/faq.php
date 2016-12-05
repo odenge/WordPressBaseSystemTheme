@@ -70,7 +70,7 @@ Template Name: よくあるご質問
 		                        <?php endwhile; ?>
 		                        <?php /* ■【End the Loop】■ */ ?>
 		                    <?php endif; ?>
-		                    <?php wp_reset_query(); /* クエリをリセット */ ?>
+		                    <?php wp_reset_postdata(); /* クエリをリセット */ ?>
 		                    </ul>
 		                <?php endforeach; ?>
 		            <?php endif; ?>

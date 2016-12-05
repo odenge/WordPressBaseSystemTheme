@@ -20,7 +20,7 @@
         <?php else : ?>
             <li>記事はまだありません。</li>
         <?php endif; ?>
-        <?php wp_reset_query(); /* クエリをリセット */ ?>
+        <?php wp_reset_postdata(); /* クエリをリセット */ ?>
         </ul>
     </div>
 

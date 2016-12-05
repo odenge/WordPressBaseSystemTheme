@@ -40,7 +40,7 @@
 	                        <dt><?php echo date('Y/m/d'); ?></dt>
 	                        <dd>新着情報はまだありません。</dd>
 	                    <?php endif; ?>
-	                    <?php wp_reset_query(); /* クエリをリセット */ ?>
+	                    <?php wp_reset_postdata(); /* クエリをリセット */ ?>
 	                    </dl>
                     </div>
                 </div><!-- end : #news-content -->
